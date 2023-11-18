@@ -9,6 +9,6 @@ app.get("/", ({}, res) => {
     res.json({ message: "Hello World" });
 });
 
-app.use('/api/v1', tasks);
+app.use('/api/v1/tasks/', tasks);
 
 export default app;
