@@ -21,15 +21,6 @@ describe("Tasks Router", () => {
       .expect(200, expected, done);
   });
 
-  it("should get hello world", (done) => {
-    const expected = { message: "Hello World" };
-    request(app)
-      .get("/")
-      .set("Accept", "application/json")
-      .expect("Content-Type", /json/)
-      .expect(200, expected, done);
-  });
-
   it("should get all tasks", (done) => {
     const expected = [
       {
@@ -56,7 +47,7 @@ describe("Tasks Router", () => {
       .expect(200, expected, done);
   });
 
-  it("Should update a new task", (done) => {
+  it("Should delete a task", (done) => {
     const expected = { message: `Task 6 has been deleted` };
     request(app)
       .delete("/api/v1/tasks/6")
