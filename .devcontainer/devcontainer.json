@@ -16,7 +16,17 @@
 				"Orta.vscode-jest",
 				"esbenp.prettier-vscode",
 				"dbaeumer.vscode-eslint"
-			]
+			],
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "zsh",
+				"terminal.integrated.profiles.linux": {
+					"zsh": {
+						"path": "/bin/zsh"
+					}
+				},
+				"editor.defaultFormatter": "esbenp.prettier-vscode",
+				"editor.formatOnSave": true
+			}
 		}
 	}
 	// Configure tool-specific properties.
