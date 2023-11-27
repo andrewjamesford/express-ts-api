@@ -4,7 +4,7 @@ import app from "../app";
 
 describe("Tasks Router", () => {
   it("Should create a new task", (done) => {
-    const expected = { message: "Task is created" };
+    const expected = { message: "Task is created 123" };
     request(app)
       .post("/api/v1/tasks/")
       .set("Accept", "application/json")
