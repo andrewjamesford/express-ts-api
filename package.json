@@ -2,9 +2,8 @@
   "name": "express-ts-api",
   "version": "1.0.0",
   "description": "",
-  "main": "./dist/index.js",
   "scripts": {
-    "start": "node ./dist/app.js",
+    "start": "node wwwroot/dist/app.js",
     "dev": "nodemon src/index.ts",
     "build": "./node_modules/typescript/bin/tsc",
     "lint": "eslint --fix src test",
