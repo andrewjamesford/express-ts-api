@@ -1,17 +1,16 @@
 {
   "compilerOptions": {
-    "outDir": "dist",
-    "sourceMap": true,
-    "target": "esnext",
+    "target": "es5",
     "module": "commonjs",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "noImplicitAny": true,
+    "lib": ["es6"],
+    "allowJs": true,
+    "outDir": "dist",
+    "rootDir": "src",
     "strict": true,
+    "esModuleInterop": true,
+    "types": ["node", "jest"],
     "skipLibCheck": true
   },
-  "include": [
-    "./*.js",
-    "src/**/*.spec.ts",
-  ],
+  "include": ["src/**/*"],
+  "exclude": ["src/**/*.spec.ts"]
 }
